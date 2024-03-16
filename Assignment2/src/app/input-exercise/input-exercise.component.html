@@ -1,0 +1,6 @@
+<div class="mx-2">
+    <h1>Input Exercise</h1>
+    <label>Enter your input<input class="form-control my-2" type="text" [(ngModel)]="inputValue"></label>
+    <p>The value of the input is: {{inputValue}}</p>
+    <button class="btn btn-primary" [disabled]="checkInput()" (click)="resetValue($event)">Reset</button>
+</div>
